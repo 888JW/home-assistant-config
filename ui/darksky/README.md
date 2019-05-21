@@ -1,6 +1,6 @@
 # Dark Sky Weather Card
 
-![image](https://user-images.githubusercontent.com/45823145/53432443-83d83700-39c0-11e9-9c93-db6945f24d70.png)
+![image](https://github.com/888JW/home-assistant-config/blob/master/dark-sky-weather-card-extended.gif)
 
 The Dark Sky Weather Card provides current and forecasted weather conditions using the Dark Sky platform. You configure the card by passing in sensor entities from the Dark Sky Sensor platform.  
 
