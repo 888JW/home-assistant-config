@@ -62,6 +62,35 @@ You should end up with the following folders:
       - visibility
     scan_interval:
       minutes: 5
+      
+** If you would like to use the hourly and short term forecast views then you must also add:
+  
+    hourly_forecast:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24      
 ~~~~
 
 The next two steps are completed differently based on the version of HA you are using:
@@ -130,6 +159,135 @@ entity_pop_4: sensor.dark_sky_precip_probability_4d
 entity_pop_5: sensor.dark_sky_precip_probability_5d
 ~~~~
 
+Optional entries required to use the hourly and short term forecast (sorry - makes the config bloated)
+
+entity_hourly_apparent_0: sensor.dark_sky_apparent_temperature_0h
+entity_hourly_apparent_1: sensor.dark_sky_apparent_temperature_1h
+entity_hourly_apparent_2: sensor.dark_sky_apparent_temperature_2h
+entity_hourly_apparent_3: sensor.dark_sky_apparent_temperature_3h
+entity_hourly_apparent_4: sensor.dark_sky_apparent_temperature_4h
+entity_hourly_apparent_5: sensor.dark_sky_apparent_temperature_5h
+entity_hourly_apparent_6: sensor.dark_sky_apparent_temperature_6h
+entity_hourly_apparent_7: sensor.dark_sky_apparent_temperature_7h
+entity_hourly_apparent_8: sensor.dark_sky_apparent_temperature_8h
+entity_hourly_apparent_9: sensor.dark_sky_apparent_temperature_9h
+entity_hourly_apparent_10: sensor.dark_sky_apparent_temperature_10h
+entity_hourly_apparent_11: sensor.dark_sky_apparent_temperature_11h
+entity_hourly_apparent_12: sensor.dark_sky_apparent_temperature_12h
+entity_hourly_apparent_13: sensor.dark_sky_apparent_temperature_13h
+entity_hourly_apparent_14: sensor.dark_sky_apparent_temperature_14h
+entity_hourly_apparent_15: sensor.dark_sky_apparent_temperature_15h
+entity_hourly_apparent_16: sensor.dark_sky_apparent_temperature_16h
+entity_hourly_apparent_17: sensor.dark_sky_apparent_temperature_17h
+entity_hourly_apparent_18: sensor.dark_sky_apparent_temperature_18h
+entity_hourly_apparent_19: sensor.dark_sky_apparent_temperature_19h
+entity_hourly_apparent_20: sensor.dark_sky_apparent_temperature_20h
+entity_hourly_apparent_21: sensor.dark_sky_apparent_temperature_21h
+entity_hourly_apparent_22: sensor.dark_sky_apparent_temperature_22h
+entity_hourly_apparent_23: sensor.dark_sky_apparent_temperature_23h
+entity_hourly_apparent_24: sensor.dark_sky_apparent_temperature_24h
+entity_hourly_icon_0: sensor.dark_sky_icon_0h
+entity_hourly_icon_1: sensor.dark_sky_icon_1h
+entity_hourly_icon_2: sensor.dark_sky_icon_2h
+entity_hourly_icon_3: sensor.dark_sky_icon_3h
+entity_hourly_icon_4: sensor.dark_sky_icon_4h
+entity_hourly_icon_5: sensor.dark_sky_icon_5h
+entity_hourly_icon_6: sensor.dark_sky_icon_6h
+entity_hourly_icon_7: sensor.dark_sky_icon_7h
+entity_hourly_icon_8: sensor.dark_sky_icon_8h
+entity_hourly_icon_9: sensor.dark_sky_icon_9h
+entity_hourly_icon_10: sensor.dark_sky_icon_10h
+entity_hourly_icon_11: sensor.dark_sky_icon_11h
+entity_hourly_icon_12: sensor.dark_sky_icon_12h
+entity_hourly_icon_13: sensor.dark_sky_icon_13h
+entity_hourly_icon_14: sensor.dark_sky_icon_14h
+entity_hourly_icon_15: sensor.dark_sky_icon_15h
+entity_hourly_icon_16: sensor.dark_sky_icon_16h
+entity_hourly_icon_17: sensor.dark_sky_icon_17h
+entity_hourly_icon_18: sensor.dark_sky_icon_18h
+entity_hourly_icon_19: sensor.dark_sky_icon_19h
+entity_hourly_icon_20: sensor.dark_sky_icon_20h
+entity_hourly_icon_21: sensor.dark_sky_icon_21h
+entity_hourly_icon_22: sensor.dark_sky_icon_22h
+entity_hourly_icon_23: sensor.dark_sky_icon_23h
+entity_hourly_icon_24: sensor.dark_sky_icon_24h
+entity_hourly_pop_0: sensor.dark_sky_precip_probability_0h
+entity_hourly_pop_1: sensor.dark_sky_precip_probability_1h
+entity_hourly_pop_2: sensor.dark_sky_precip_probability_2h
+entity_hourly_pop_3: sensor.dark_sky_precip_probability_3h
+entity_hourly_pop_4: sensor.dark_sky_precip_probability_4h
+entity_hourly_pop_5: sensor.dark_sky_precip_probability_5h
+entity_hourly_pop_6: sensor.dark_sky_precip_probability_6h
+entity_hourly_pop_7: sensor.dark_sky_precip_probability_7h
+entity_hourly_pop_8: sensor.dark_sky_precip_probability_8h
+entity_hourly_pop_9: sensor.dark_sky_precip_probability_9h
+entity_hourly_pop_10: sensor.dark_sky_precip_probability_10h
+entity_hourly_pop_11: sensor.dark_sky_precip_probability_11h
+entity_hourly_pop_12: sensor.dark_sky_precip_probability_12h
+entity_hourly_pop_13: sensor.dark_sky_precip_probability_13h
+entity_hourly_pop_14: sensor.dark_sky_precip_probability_14h
+entity_hourly_pop_15: sensor.dark_sky_precip_probability_15h
+entity_hourly_pop_16: sensor.dark_sky_precip_probability_16h
+entity_hourly_pop_17: sensor.dark_sky_precip_probability_17h
+entity_hourly_pop_18: sensor.dark_sky_precip_probability_18h
+entity_hourly_pop_19: sensor.dark_sky_precip_probability_19h
+entity_hourly_pop_20: sensor.dark_sky_precip_probability_20h
+entity_hourly_pop_21: sensor.dark_sky_precip_probability_21h
+entity_hourly_pop_22: sensor.dark_sky_precip_probability_22h
+entity_hourly_pop_23: sensor.dark_sky_precip_probability_23h
+entity_hourly_pop_24: sensor.dark_sky_precip_probability_24h
+entity_hourly_summary_0: sensor.dark_sky_summary_0h
+entity_hourly_summary_1: sensor.dark_sky_summary_1h
+entity_hourly_summary_2: sensor.dark_sky_summary_2h
+entity_hourly_summary_3: sensor.dark_sky_summary_3h
+entity_hourly_summary_4: sensor.dark_sky_summary_4h
+entity_hourly_summary_5: sensor.dark_sky_summary_5h
+entity_hourly_summary_6: sensor.dark_sky_summary_6h
+entity_hourly_summary_7: sensor.dark_sky_summary_7h
+entity_hourly_summary_8: sensor.dark_sky_summary_8h
+entity_hourly_summary_9: sensor.dark_sky_summary_9h
+entity_hourly_summary_10: sensor.dark_sky_summary_10h
+entity_hourly_summary_11: sensor.dark_sky_summary_11h
+entity_hourly_summary_12: sensor.dark_sky_summary_12h
+entity_hourly_summary_13: sensor.dark_sky_summary_13h
+entity_hourly_summary_14: sensor.dark_sky_summary_14h
+entity_hourly_summary_15: sensor.dark_sky_summary_15h
+entity_hourly_summary_16: sensor.dark_sky_summary_16h
+entity_hourly_summary_17: sensor.dark_sky_summary_17h
+entity_hourly_summary_18: sensor.dark_sky_summary_18h
+entity_hourly_summary_19: sensor.dark_sky_summary_19h
+entity_hourly_summary_20: sensor.dark_sky_summary_20h
+entity_hourly_summary_21: sensor.dark_sky_summary_21h
+entity_hourly_summary_22: sensor.dark_sky_summary_22h
+entity_hourly_summary_23: sensor.dark_sky_summary_23h
+entity_hourly_summary_24: sensor.dark_sky_summary_24h
+entity_hourly_temp_0: sensor.dark_sky_temperature_0h
+entity_hourly_temp_1: sensor.dark_sky_temperature_1h
+entity_hourly_temp_2: sensor.dark_sky_temperature_2h
+entity_hourly_temp_3: sensor.dark_sky_temperature_3h
+entity_hourly_temp_4: sensor.dark_sky_temperature_4h
+entity_hourly_temp_5: sensor.dark_sky_temperature_5h
+entity_hourly_temp_6: sensor.dark_sky_temperature_6h
+entity_hourly_temp_7: sensor.dark_sky_temperature_7h
+entity_hourly_temp_8: sensor.dark_sky_temperature_8h
+entity_hourly_temp_9: sensor.dark_sky_temperature_9h
+entity_hourly_temp_10: sensor.dark_sky_temperature_10h
+entity_hourly_temp_11: sensor.dark_sky_temperature_11h
+entity_hourly_temp_12: sensor.dark_sky_temperature_12h
+entity_hourly_temp_13: sensor.dark_sky_temperature_13h
+entity_hourly_temp_14: sensor.dark_sky_temperature_14h
+entity_hourly_temp_15: sensor.dark_sky_temperature_15h
+entity_hourly_temp_16: sensor.dark_sky_temperature_16h
+entity_hourly_temp_17: sensor.dark_sky_temperature_17h
+entity_hourly_temp_18: sensor.dark_sky_temperature_18h
+entity_hourly_temp_19: sensor.dark_sky_temperature_19h
+entity_hourly_temp_20: sensor.dark_sky_temperature_20h
+entity_hourly_temp_21: sensor.dark_sky_temperature_21h
+entity_hourly_temp_22: sensor.dark_sky_temperature_22h
+entity_hourly_temp_23: sensor.dark_sky_temperature_23h
+entity_hourly_temp_24: sensor.dark_sky_temperature_24h
+
+
 **Note:** The following entries require template sensors.  The alt_* entries are for overriding the text for the indicated slot entry. By using these you can create whatever format you like for these entries.
 ~~~~
 entity_current_text: sensor.dark_sky_current_text
@@ -180,6 +338,18 @@ tooltips: true
 old_daily_format: false
 time_format: 24
 show_beaufort: true
+
+extended_info: true
+cycle_duration: 60
+forecast_icon_margin_right: 4px
+forecast_icon_size: 60px
+forecast_labels: true
+forecast_labels_colour: blue
+large_icon_size: 14em
+
+
+
+
 ~~~~
 
 **Flags**
@@ -225,6 +395,13 @@ show_beaufort: true
 | slot_r2                  | **humidity**                | Sets the value used in current conditions slot r2 : See slots for more info |
 | slot_r3                  | **pressure**                | Sets the value used in current conditions slot r3 : See slots for more info |
 | slot_r4                  | **sun_following**           | Sets the value used in current conditions slot r4 : See slots for more info |
+|extended_info             |  true / **false**           | If set to true then the hourly and short term forecast will be displayed    |
+|cycle_duration            |  **60**                     | Sets the # of seconds to cycle through daily/short-term/hourly forecasts    |
+|forecast_icon_margin_right|  **5px**  /px or em value   | Sets the right margin of the small forecast icons                           |
+|forecast_icon_size        |  **50px** /px or em value   | Sets the size of the small forecast icons                                   |
+|forecast_labels           |  true / **false**           | If set to true then labels will be displayed beside the rows of forecast #s |
+|forecast_labels_colour    |  **#d9d9d9**                | Colour of the forecast labels (if forecast_labels = true                    |
+|large_icon_size           |  **10em** /px or em value   | Sets the size of the large icon for current weather                         |
 
 
 **Slots**
