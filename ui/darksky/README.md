@@ -160,7 +160,7 @@ entity_pop_5: sensor.dark_sky_precip_probability_5d
 ~~~~
 
 Optional entries required to use the hourly and short term forecast (sorry - makes the config bloated)
-
+~~~~
 entity_hourly_apparent_0: sensor.dark_sky_apparent_temperature_0h
 entity_hourly_apparent_1: sensor.dark_sky_apparent_temperature_1h
 entity_hourly_apparent_2: sensor.dark_sky_apparent_temperature_2h
@@ -286,7 +286,7 @@ entity_hourly_temp_21: sensor.dark_sky_temperature_21h
 entity_hourly_temp_22: sensor.dark_sky_temperature_22h
 entity_hourly_temp_23: sensor.dark_sky_temperature_23h
 entity_hourly_temp_24: sensor.dark_sky_temperature_24h
-
+~~~~
 
 **Note:** The following entries require template sensors.  The alt_* entries are for overriding the text for the indicated slot entry. By using these you can create whatever format you like for these entries.
 ~~~~
